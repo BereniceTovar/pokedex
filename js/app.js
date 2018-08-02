@@ -139,8 +139,8 @@ $(document).ready(function(){
         console.log(pokemones);
         pokemones.forEach(function(pokemon){
             let url = pokemon.pokemon_species.url;
-            let nameasd = pokemon.pokemon_species.name;
-            $("#elementos").append(armarTemplate(nameasd, url));
+            let name = pokemon.pokemon_species.name;
+            $("#elementos").append(armarTemplate(name, url));
         })
     }
     
