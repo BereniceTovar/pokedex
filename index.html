@@ -3,45 +3,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
+    <title>Pokedex</title>
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
     <link rel="stylesheet" href="css/assets/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <header>
+        <center><img class="logo-pokemon"src="assets/images/pokemon.png" alt="logo-pokemon"></center>
+        <h1>Pokedex</h1>
+    </header>
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-offset-1 col-lg-6">
-                <input type="text" class="form-control" id="pokeInput">
-            </div>
-            <div class="col-lg-4">
-                <button type="button" id="buscar-pokemon" class="btn btn-default">Buscar pokemon</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-offset-3 col-lg-6" id="elementos">
-            </div>
+            <div class="col-lg-2 col-md-2 col-sm-0"></div>
+            <div class="col-lg-8 col-md-2 col-sm-12" id="elementos"></div>
+            <div class="col-lg-2 col-md-2 col-sm-0"></div>
         </div>
     </div>
 
-    <div id="characters-container" class="row"></div>
-
-    <!-- Prueba 1
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-offset-1 col-lg-6">
-                    <input type="text" class="form-control" id="pokeInput">
-                </div>
-                <div class="col-lg-4">
-                    <button type="button" id="buscar-pokemon" class="btn btn-default">Buscar pokemon</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-offset-3 col-lg-6" id="elementos">
-                </div>
-            </div>
-        </div>
-        -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
