@@ -16,7 +16,7 @@ h1 {
 }
 
 #cont-pokemon {
-    border: 1px solid black;
+    border: 1px solid white;
     display:  inline-block;
     width: 20%;
     text-align: center;
