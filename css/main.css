@@ -15,7 +15,9 @@ h1 {
     font-size: 50px;
 }
 
-#cont-pokemon {
+/*Content*/
+
+.cont-pokemon {
     border: 1px solid white;
     display:  inline-block;
     width: 20%;
@@ -24,7 +26,22 @@ h1 {
     margin: 10px;
 }
 
-#cont-pokemon:hover {
+.cont-pokemon:hover {
     background-color: #F7D3CF;
     cursor: pointer;
+}
+
+img.specific-info {
+    width: 200px;
+}
+
+.info-pokemon {
+    border: 1px solid white;
+    background-color: white;
+    text-align: center;
+}
+
+.container-info-p {
+    text-align: left;
+    margin-left: 30%;
 }
