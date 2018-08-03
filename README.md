@@ -5,7 +5,7 @@
 
 ***
 
-En este ejercicio se consume la API de Pokeapi, se diseña un pokedex. Se utilizan conceptos de jQuery y Ajax, responsive Web Design y Bootstrap.
+En este ejercicio se consume la API de Pokeapi, se diseña un pokedex. Se utilizan conceptos de jQuery, Ajax, responsive Web Design y Bootstrap.
 
 
 ## Visualización desktop
