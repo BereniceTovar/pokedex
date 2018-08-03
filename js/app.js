@@ -4,9 +4,7 @@ $(document).ready(function(){
         $("#elementos").empty();
 
     var dibujarPokemones = function(pokemones){
-        var pokemon = "";
-        var url = "";
-        //console.log(pokemones);
+        console.log(pokemones);
         pokemones.forEach(function(pokemon){
             let id = pokemon.entry_number;
             let imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png";
@@ -29,7 +27,7 @@ $(document).ready(function(){
             datatype: 'json',
         })
         .done(function(response){
-            //console.log(response);
+            console.log(response);
             dibujarPokemones(response.pokemon_entries);
         })
         .fail(function(error){
@@ -42,15 +40,54 @@ $(document).ready(function(){
     }
 
     ajaxPokemon();
-
+    //Termina carga pokemones
 
     $(document).on("click", '#cont-pokemon', function(event) { 
         console.log("Info pokemon");
 
+        var dibujarPokemones2 = function(pokemones){
+            console.log(pokemones);
+            pokemones.forEach(function(pokemon){
+                let id = pokemon.id;
+                let imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png";
+                let name = pokemon.name;
+                let speed = "Speed  " + pokemon.base_stat;
+                let specialDefense = "Special Defense  " + pokemon.base_stat;
+                $("#elementos").append(armarTemplate2(name, imagen, speed, specialDefense));
+            })
+        }
         
+        
+        var armarTemplate2 = function(name, imagen, speed, specialDefense){
+            var t = "<div id='info-pokemon'><div class='elemento'>" + name + "</div><img class='img-pkmn' src='" 
+            + imagen + "' alt='imagen-pokemon'><div>" + speed + "</div><div>" + specialDefense + "</div></div>" ;
+            return t;
+        }
+        
+        var ajaxPokemon2 = function(pokemon){
+            $.ajax({
+                url: 'https://pokeapi.co/api/v2/pokemon/',
+                type: 'GET',
+                datatype: 'json',
+            })
+            .done(function(response){
+                //console.log(response);
+                dibujarPokemones2(response.states);
+            })
+            .fail(function(error){
+                console.log('Error');
+            });
+    
+            function response(data) {
+                console.log(data);
+            }
+        }
+    
+        ajaxPokemon2();
 
         
     });
+    //Termina segunda llamada ajax / Click infor Pokemon
 })
 
 
