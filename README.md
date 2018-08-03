@@ -1,4 +1,4 @@
-# Lyft
+# Pokedex
 
 * **Curso:** _Construye una single page app(SPA) multi-usuario consumiendo data remota_
 * **Unidad:** _¿Qué significa traer datos de un servidor asíncronamente?_
