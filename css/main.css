@@ -47,7 +47,7 @@ img.specific-info {
     margin-left: 30%;
     border: 1px solid white;
     width: 60%;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .names-pkmn {
@@ -68,4 +68,12 @@ h2 {
 .cont-h3 {
     background-color: antiquewhite;
     padding: 10px;
+}
+
+button.back {
+    border: 1px solid white;
+    border-radius: 10%;
+    margin: 20px;
+    width: 180px;
+    padding: 5px;
 }
