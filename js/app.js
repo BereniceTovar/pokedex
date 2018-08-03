@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+        
         console.log("Cargó");
         $("#elementos").empty();
 
@@ -79,6 +79,7 @@ $(document).ready(function(){
             })
             .fail(function(error){
                 console.log('Error');
+                swal("Error!", "Try again");
             });
         }
 
