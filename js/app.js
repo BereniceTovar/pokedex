@@ -59,7 +59,7 @@ $(document).ready(function(){
         
         
         var armarTemplate2 = function(name, id, imagen, speed, specialDefense, specialAttack, defense, attack, hp){
-            var t = "<div class='info-pokemon'><div>" + name + "</div><div>#" + id + "</div><img class='specific-info' src='"
+            var t = "<div class='info-pokemon'><div class='names-pkmn'>" + name + "</div><div class='numb-pkmn'>#" + id + "</div><img class='specific-info' src='"
             + imagen + "' alt='pokemon'><div class='container-info-p'><span class='info-p'>Speed: " + speed + "</span><br><span class='info-p'>Special Defense: " 
             + specialDefense + "</span><br><span class='info-p'>Special Attack: " + specialAttack 
             + "</span><br><span class='info-p'>Defense: " + defense + "</span><br><span class='info-p'>Attack: " 

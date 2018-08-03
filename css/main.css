@@ -1,5 +1,6 @@
 body {
     background-color: #eeeeee;
+    font-family: 'Arimo', sans-serif;
 }
 
 /*Header*/
@@ -43,5 +44,17 @@ img.specific-info {
 
 .container-info-p {
     text-align: left;
-    margin-left: 30%;
+    margin-left: 20%;
+    border: 1px solid white;
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+.names-pkmn {
+    padding: 10px;
+    font-size: 30px;
+}
+
+.numb-pkmn {
+    font-size: 20px;
 }
