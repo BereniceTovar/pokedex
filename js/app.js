@@ -6,7 +6,7 @@ $(document).ready(function(){
     var dibujarPokemones = function(pokemones){
         var pokemon = "";
         var url = "";
-        console.log(pokemones);
+        //console.log(pokemones);
         pokemones.forEach(function(pokemon){
             let id = pokemon.entry_number;
             let imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png";
@@ -18,7 +18,7 @@ $(document).ready(function(){
     
     
     var armarTemplate = function(name, url, imagen){
-        var t = "<div id='cont-pokemon'><div class='elemento'>" + name + "</div><img src='" + imagen + "' alt='imagen-pokemon'></div>" ;
+        var t = "<div id='cont-pokemon'><div class='elemento'>" + name + "</div><img class='img-pkmn' src='" + imagen + "' alt='imagen-pokemon'></div>" ;
         return t;
     }
     
@@ -29,7 +29,7 @@ $(document).ready(function(){
             datatype: 'json',
         })
         .done(function(response){
-            console.log(response);
+            //console.log(response);
             dibujarPokemones(response.pokemon_entries);
         })
         .fail(function(error){
@@ -42,6 +42,14 @@ $(document).ready(function(){
     }
 
     ajaxPokemon();
+
+
+    $(document).on("click", '#cont-pokemon', function(event) { 
+        console.log("Info pokemon");
+
+
+        
+    });
 })
 
 
