@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-        console.log("Entro");
+        console.log("Cargó");
         $("#elementos").empty();
 
     var dibujarPokemones = function(pokemones){
@@ -56,11 +56,10 @@ $(document).ready(function(){
                 $("#elementos").remove();
                 $("#elementos-pkm").append(armarTemplate2(name, id, imagen, speed, specialDefense, specialAttack, defense, attack, hp));
         }
-        
-        
+
         var armarTemplate2 = function(name, id, imagen, speed, specialDefense, specialAttack, defense, attack, hp){
             var t = "<div class='info-pokemon'><div class='names-pkmn'>" + name + "</div><div class='numb-pkmn'>#" + id + "</div><img class='specific-info' src='"
-            + imagen + "' alt='pokemon'><div class='container-info-p'><span class='info-p'>Speed: " + speed + "</span><br><span class='info-p'>Special Defense: " 
+            + imagen + "' alt='pokemon'><div class='cont-h3'><h3>Profile</h3></div><br><div class='container-info-p'><span class='info-p'>Speed: " + speed + "</span><br><span class='info-p'>Special Defense: " 
             + specialDefense + "</span><br><span class='info-p'>Special Attack: " + specialAttack 
             + "</span><br><span class='info-p'>Defense: " + defense + "</span><br><span class='info-p'>Attack: " 
             + attack + "</span><br><span class='info-p'>HP: " + hp + "</span></div></div>" ;
