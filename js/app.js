@@ -47,6 +47,7 @@ $(document).ready(function(){
     $(document).on("click", '#cont-pokemon', function(event) { 
         console.log("Info pokemon");
 
+        
 
         
     });
