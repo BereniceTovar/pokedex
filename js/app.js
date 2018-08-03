@@ -138,15 +138,18 @@ $(document).ready(function(){
         var url = "";
         console.log(pokemones);
         pokemones.forEach(function(pokemon){
+            let id = pokemon.entry_number;
+            let imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png";
+            console.log(imagen);
             let url = pokemon.pokemon_species.url;
             let name = pokemon.pokemon_species.name;
-            $("#elementos").append(armarTemplate(name, url));
+            $("#elementos").append(armarTemplate(name, url, imagen));
         })
     }
     
     
-    var armarTemplate = function(name, url){
-        var t = "<div class='elemento'>" + name + "</div>"
+    var armarTemplate = function(name, url, imagen){
+        var t = "<div class='elemento'>" + name + "</div><img src='" + imagen + "' alt='imagen-pokemon'>" ;
         return t;
     }
     
