@@ -6,10 +6,10 @@ $(document).ready(function(){
     var dibujarPokemones = function(pokemones){
         //console.log(pokemones);
         pokemones.forEach(function(pokemon){
-            let id = pokemon.entry_number;
-            let imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png";
-            let url = pokemon.pokemon_species.url;
-            let name = pokemon.pokemon_species.name.charAt(0).toUpperCase() + pokemon.pokemon_species.name.slice(1);
+            var id = pokemon.entry_number;
+            var imagen = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png";
+            var url = pokemon.pokemon_species.url;
+            var name = pokemon.pokemon_species.name.charAt(0).toUpperCase() + pokemon.pokemon_species.name.slice(1);
             $("#elementos").append(armarTemplate(name, url, imagen, id));
         })
     }
@@ -44,15 +44,15 @@ $(document).ready(function(){
 
         var dibujarPokemones2 = function(pokemones){
             //console.log(pokemones);
-                let name = pokemones.name.charAt(0).toUpperCase() + pokemones.name.slice(1);
-                let id = pokemones.id;
-                let imagen = pokemones.sprites.front_default;
-                let speed = pokemones.stats[0].base_stat;
-                let specialDefense = pokemones.stats[1].base_stat;
-                let specialAttack = pokemones.stats[2].base_stat;
-                let defense = pokemones.stats[3].base_stat;
-                let attack = pokemones.stats[4].base_stat;
-                let hp = pokemones.stats[5].base_stat;
+                var name = pokemones.name.charAt(0).toUpperCase() + pokemones.name.slice(1);
+                var id = pokemones.id;
+                var imagen = pokemones.sprites.front_default;
+                var speed = pokemones.stats[0].base_stat;
+                var specialDefense = pokemones.stats[1].base_stat;
+                var specialAttack = pokemones.stats[2].base_stat;
+                var defense = pokemones.stats[3].base_stat;
+                var attack = pokemones.stats[4].base_stat;
+                var hp = pokemones.stats[5].base_stat;
                 $("#elementos").remove();
                 $("#elementos-pkm").append(armarTemplate2(name, id, imagen, speed, specialDefense, specialAttack, defense, attack, hp));
                 $(".back").click(function(){window.location.reload(true);});
