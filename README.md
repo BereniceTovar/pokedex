@@ -1,11 +1,12 @@
 # Pokedex
 
-* **Curso:** _Construye una single page app(SPA) multi-usuario consumiendo data remota_
-* **Unidad:** _¿Qué significa traer datos de un servidor asíncronamente?_
+**Technologies:**
 
-***
-
-En este ejercicio se consume la API de Pokeapi, se diseña un pokedex. Se utilizan: jQuery, Ajax, Responsive Web Design y Bootstrap.
+* HTML5
+* CSS
+* JS
+* jQuery
+* Ajax
 
 
 ## Visualización desktop
